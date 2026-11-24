@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('Hello')
+        console.log("Javascript");
+
+        var age = 20;
+        console.log("Age : ", age);
+
+        let course = "Mern";
+        course = "dsa";
+        console.log("Course", course);
+
+        const pan = "SDFGH3456";
+        console.log(pan);
+
+        let username = "admin";
+        let password = "admin123";
+
+        if(username == "admin" && password == "admin123"){
+            console.log("Login Success");
+
+        } else {
+            console.log("Login Failed");
+        }
+        function student(name,clg="sece"){
+            console.log("hello", name);
+
+        }
+        student('Sneha',"sece");
+        student('kumar',"sece");
+        student('Priya',"sece");
+        student('Sagar',"sece");
+        function employee(name,clg="sece"){
+            console.log("hello",name);
+        }
+        
+        employee('tcs',"sneha");
+        employee('google',"kumar");
+        employee('micorsoft',"sece");
+        employee('amazon',"sece");
+        function Diffcompany(name,company,clg){
+            console.log("hello", name, "from", company,"at",clg);
+
+        }
+
+        Diffcompany('sneha',"tcs","SECE");
+        Diffcompany('kumar',"google","SECE");
+        Diffcompany('priya',"microsoft","SECE");
+
+        let mult1=() =>  {
+            return "Hello Arrow function";
+        }
+        console.log(mult1());
+
+        let mult = (a, b) => {
+            return a * b;
+        }
+        console.log(mult(2, 4));
+
+        function sece(callback) {
+            console.log("Welcome sece");
+            callback()
+        }
+        function stud() {
+            console.log("Display Students");
+        }
+        sece(stud);
+
+        let fetch_api = new Promise((resolve,reject)=>{
+            let api=false;
+            if(api){
+                resolve("Fetched api data");
+
+            }else{
+                setTimeout(() => {
+                    
+                
+                reject("Failed  to fetch api data");
+            },3000);
+            }
+    
+        })
+        fetch_api.then(data => console.log(data))
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
